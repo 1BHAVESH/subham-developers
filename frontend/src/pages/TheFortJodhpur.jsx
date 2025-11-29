@@ -124,37 +124,40 @@ const TheFortJodhpur = () => {
               connectivity from the most prominent locations of Jodhpur. Life at
               The Fort is going to be a dream come true.
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-6 gap-6 mt-12 text-center">
-              <div className="flex flex-col items-start leading-tight">
-                <p className="font-semibold text-[14px]">216</p>
-                <p className="text-[13px] text-gray-600">Apartments</p>
-              </div>
+           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 text-center md:text-left">
+  {/* Item 1 */}
+  <div className="leading-tight">
+    <p className="font-semibold text-[16px]">83</p>
+    <p className="text-[13px] text-gray-600">
+      LUXURIOUS <br /> VILLAS
+    </p>
+  </div>
 
-              <div className="flex flex-col items-start leading-tight">
-                <p className="font-semibold text-[14px]">2/2.5/3</p>
-                <p className="text-[13px] text-gray-600">BHK Homes</p>
-              </div>
+  {/* Item 2 */}
+  <div className="leading-tight">
+    <p className="font-semibold text-[16px]">09</p>
+    <p className="text-[13px] text-gray-600">
+      BIGHA TOTAL <br /> LAND AREA
+    </p>
+  </div>
 
-              <div className="flex flex-col items-start leading-tight">
-                <p className="font-semibold text-[14px]">3</p>
-                <p className="text-[13px] text-gray-600">Towers</p>
-              </div>
+  {/* Item 3 */}
+  <div className="leading-tight">
+    <p className="font-semibold text-[16px]">03</p>
+    <p className="text-[13px] text-gray-600">
+      BIGHA LUSH <br /> GREEN GARDEN
+    </p>
+  </div>
 
-              <div className="flex flex-col items-start leading-tight">
-                <p className="font-semibold text-[14px]">13 Bigha</p>
-                <p className="text-[13px] text-gray-600">Area</p>
-              </div>
+  {/* Item 4 */}
+  <div className="leading-tight">
+    <p className="font-semibold text-[16px]">60%</p>
+    <p className="text-[13px] text-gray-600">
+      OPEN <br /> AREA
+    </p>
+  </div>
+</div>
 
-              <div className="flex flex-col items-start leading-tight">
-                <p className="font-semibold text-[14px]">Jodhpur</p>
-                <p className="text-[13px] text-gray-600">Location</p>
-              </div>
-
-              <div className="flex flex-col items-start leading-tight">
-                <p className="font-semibold text-[14px]">15</p>
-                <p className="text-[13px] text-gray-600">Total Plots</p>
-              </div>
-            </div>
           </div>
 
           {/* RIGHT IMAGE */}
