@@ -1,0 +1,89 @@
+import React from "react";
+import Abtimg1 from "../assets/figma_about_img.png"; // big img
+import CommomImg from "@/components/CommonBackgroundImg";
+
+const About = () => {
+  return (
+    <>
+      {/* TOP BG IMAGE SECTION */}
+      <CommomImg page="Mission & Vision" arrowSize={80} />
+
+      {/* 01 MISSION SECTION */}
+      <section className="max-w-6xl mx-auto py-16 px-4 md:px-6 flex flex-col md:flex-row gap-10 items-center">
+        {/* LEFT IMAGE */}
+        <div className="w-full md:w-1/2">
+          <img
+            src={Abtimg1}
+            alt="Mission Image"
+            className="rounded-xl shadow-lg w-[595px] h-[400px] object-cover"
+          />
+        </div>
+
+        {/* RIGHT CONTENT */}
+        <div className="w-full md:w-1/2">
+          <h3 className="flex items-end gap-2 mb-4 border-b-2 border-[#D2AB48] w-fit pb-1">
+            <span className="text-[96px] font-normal text-[#D2AB48] leading-none">
+              01
+            </span>
+            <span className="text-[24px] font-normal text-[#D2AB48] leading-none mb-2">
+              Mission
+            </span>
+          </h3>
+
+          <h4 className="text-xl font-medium mb-4">
+            Building with Integrity, Delivering with Excellence
+          </h4>
+
+          <ul className="space-y-2 max-w-[470px]">
+            <li>• To create high-quality and durable properties.</li>
+            <li>• To develop sustainable and value-driven projects that uplift lifestyles.</li>
+            <li>• To ensure reliable and timely construction in every project.</li>
+            <li>• To maintain transparent and honest dealings with all clients.</li>
+            <li>• To deliver exceptional service through every stage of buying and ownership.</li>
+            <li>• To help every customer find the perfect space to live, invest, or grow.</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* 02 VISION SECTION (REVERSE LAYOUT) */}
+      <section className="max-w-6xl mx-auto py-16 px-4 md:px-6 flex flex-col md:flex-row-reverse gap-10 items-center">
+        {/* RIGHT IMAGE */}
+        <div className="w-full md:w-1/2">
+          <img
+            src={Abtimg1}
+            alt="Vision Image"
+            className="rounded-xl shadow-lg w-[595px] h-[400px] object-cover"
+          />
+        </div>
+
+        {/* LEFT CONTENT */}
+        <div className="w-full md:w-1/2">
+          <h3 className="flex items-end gap-2 mb-4 border-b-2 border-[#D2AB48] w-fit pb-1">
+            <span className="text-[96px] font-normal text-[#D2AB48] leading-none">
+              02
+            </span>
+            <span className="text-[24px] font-normal text-[#D2AB48] leading-none mb-2">
+              Vision
+            </span>
+          </h3>
+
+          <h4 className="text-xl font-medium mb-4">
+            Building Dreams, Creating Futures
+          </h4>
+
+          <ul className="space-y-2 max-w-[470px]">
+            <li>• To become a trusted leader in the real estate industry.</li>
+            <li>• To shape modern, well-planned, and future-ready communities.</li>
+            <li>• To deliver properties that stand the test of time.</li>
+            <li>• To set new benchmarks in innovation and construction standards.</li>
+            <li>• To achieve the highest level of customer satisfaction.</li>
+            <li>• To uphold ethical and responsible business practices.</li>
+            <li>• To build long-lasting relationships with our customers.</li>
+          </ul>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default About;
