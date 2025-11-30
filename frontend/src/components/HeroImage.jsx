@@ -7,7 +7,7 @@ export default function HeroImage() {
       <img
         src={hero1}
         alt="Subham Developers"
-        className="w-full h-[170px] lg:h-auto"
+        className="w-full h-[170px] lg:h-[501px]"
       />
     </section>
   );

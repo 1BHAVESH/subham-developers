@@ -10,10 +10,12 @@ import Media from "@/pages/Media";
 import MissionAndVision from "@/pages/MissionAndVision";
 import TheFortJodhpur from "@/pages/TheFortJodhpur";
 import ShubhamParadise from "@/pages/ShubhamParadise";
+import ScrollToTop from "@/components/ScrollTop";
 
 export default function AppRoutes() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
         {/* COMMON LAYOUT WITH NAVBAR */}
         <Route element={<Layout />}>

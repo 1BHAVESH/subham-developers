@@ -12,7 +12,7 @@ export default function StatsSection() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="max-w-[1100px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 px-6">
+      <div className="max-w-[1300px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 px-6">
 
         {/* STAT ITEM */}
         <div className="flex items-center space-x-2 text-white">

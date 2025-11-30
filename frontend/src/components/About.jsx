@@ -4,7 +4,7 @@ import hero from "../assets/Screenshot.png";
 
 export default function About() {
   return (
-    <section className="max-w-6xl mx-auto px-6 lg:px-12 py-16">
+    <section className="max-w-[1370px] mx-auto px-6 lg:px-12 py-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
         {/* 🟢 TEXT FIRST FOR MOBILE, SECOND FOR DESKTOP */}
         <div className="flex flex-col justify-center order-1 lg:order-2">

@@ -144,9 +144,9 @@
 }
 
 /* Shadcn SelectValue default text color override */
-[data-placeholder] {
+/* [data-placeholder] {
   color: #FACC15 !important;   /* Tailwind yellow-400 */
-}
+ */
 
 /* Pagination dots (default) */
 .swiper-pagination-bullet {

@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Phone, Mail, MapPin } from "lucide-react"
 import CommomImg from "@/components/CommonBackgroundImg"
 import { useForm } from "react-hook-form";
+import { toast } from "sonner"
 
 export default function ContactForm() {
   const contactData = [
@@ -18,10 +19,25 @@ export default function ContactForm() {
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+   const onSubmit = async (data) => {
+    await toast.promise(
+      fetch("http://localhost:3001/api/mail/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      }).then(res => res.json()),
+
+      {
+        loading: "Sending your message... ⏳",
+        success: "Mail sent successfully! 📩",
+        error: "Failed to send email ❌",
+      }
+    );
+
+    reset(); 
   };
 
   return (

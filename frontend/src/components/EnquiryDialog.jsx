@@ -12,6 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectTrigger, SelectContent, SelectItem, SelectValue } from "@/components/ui/select";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 
 export default function EnquiryDialog({ selectedProject }) {   // 👈 projects array receive
 
@@ -26,18 +27,26 @@ export default function EnquiryDialog({ selectedProject }) {   // 👈 projects 
   },[selectedProject, setValue])
 
   const onSubmit = async (data) => {
-    const finalData = { ...data, project: selectedProject };
+  const finalData = { ...data, project: selectedProject };
 
-    const response = await fetch("http://localhost:3001/api/mail/send-email", {
+  //  Use toast.promise
+  await toast.promise(
+    fetch("http://localhost:3001/api/mail/send-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(finalData),
-    });
+    }).then(res => res.json()),
 
-    const result = await response.json();
-    alert(result.success ? "Enquiry Sent" : "Error sending");
-    reset();
-  };
+    {
+      loading: "Sending your enquiry...",   
+      success: "Mail sent successfully! ",  
+      error: "Something went wrong ❌",     
+    }
+  );
+
+  reset(); // Reset form after mail send
+};
+
 
   return (
   

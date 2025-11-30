@@ -5,7 +5,7 @@ import React from "react";
 const Projects = () => {
   return (
    <>
-   <CommomImg />
+   <CommomImg page="Projects"/>
     <section className="w-full py-12 md:py-16">
       <div className="max-w-6xl mx-auto text-center px-4">
         {/* Top Text */}

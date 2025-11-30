@@ -19,9 +19,14 @@ export default function Projects() {
   ];
 
   return (
-    <section className="max-w-6xl mx-auto px-6 lg:px-12 py-16">
+    <section className="max-w-[1370px] mx-auto px-6 lg:px-12 py-16">
       <div className="mb-5">
-        <h2 className="text-3xl md:text-2xl font-bold">Featured Projects</h2>
+        <div className="flex items-center gap-2">
+  <div className="h-1 w-5 bg-yellow-500"></div>
+  <p className="font-bold text-[24px]">Projects</p>
+</div>
+
+        <h2 className="text-3xl md:text-2xl font-normal">Featured Projects</h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
