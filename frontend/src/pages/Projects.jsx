@@ -21,7 +21,7 @@ const Projects = () => {
     </section>
     <section className="max-w-[1070px] mx-auto mb-10">
        {
-        [1,2,3].map((id) => ( <ProjectsImgAndPdf key={id}/>))
+        [1,2].map((id) => ( <ProjectsImgAndPdf key={id}/>))
        }
     </section>
    </>
