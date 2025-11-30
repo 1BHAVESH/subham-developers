@@ -76,16 +76,21 @@ const ShubhamParadise = () => {
         <div className="absolute bottom-0 translate-y-1/2 w-full flex justify-center z-20">
           <div
             className="bg-[#D1A84F] max-w-[1140px] w-[90%] h-[72px] 
-     text-white flex items-center justify-between px-6 
+     text-white flex items-center justify-between px-[67px]
      rounded-2xl shadow-lg text-sm md:text-base"
           >
             {tabs.map((tab, index) => (
-              <button
+              <div key={index} className="flex flex-row gap-6">
+                <button
                 key={index}
-                className="hover:opacity-80 transition-all duration-300"
+                className="hover:opacity-80 texr-[20px] font-medium transition-all duration-300"
               >
                 {tab}
               </button>
+              <div className="h-8 w-[1px] bg-white"></div>
+                
+                </div>
+              
             ))}
           </div>
         </div>

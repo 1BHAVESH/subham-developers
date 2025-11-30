@@ -18,11 +18,11 @@ export default function HeroImage() {
         className="w-full h-[170px] lg:h-[501px]"
       >
         <SwiperSlide>
-          <img src={hero1} alt="subham developers" className="w-full h-full object-cover" />
+          <img src={hero2} alt="subham developers" className="w-full h-full object-cover" />
         </SwiperSlide>
 
         <SwiperSlide>
-          <img src={hero2} alt="subham developers" className="w-full h-full object-cover" />
+          <img src={hero1} alt="subham developers" className="w-full h-full object-cover" />
         </SwiperSlide>
       </Swiper>
     </section>
