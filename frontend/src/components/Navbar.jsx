@@ -186,9 +186,9 @@ export default function Header() {
                 <Menu size={24} className="cursor-pointer text-gray-700 hover:text-[#d4af37] transition-colors" />
               </SheetTrigger>
 
-              <SheetContent side="right" className="bg-white w-[280px] sm:w-[320px]">
+              <SheetContent side="right" className="bg-white w-[280px] h-[450px]">
                 <SheetTitle className="hidden"></SheetTitle>
-                <SheetHeader className="p-2 pl-1 h-[50px]">
+                <SheetHeader className="p-2 mr-[190px] h-[0px]">
                   <img
                     src="/logo.png"
                     alt="menu"
